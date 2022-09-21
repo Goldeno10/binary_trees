@@ -36,12 +36,14 @@ int main(void)
     root->right->right = binary_tree_node(root->right, 128);
     root->left->left = binary_tree_node(root->left, 10);
     root->right->left = binary_tree_node(root->right, 45);
+    root->right->left->right = binary_tree_node(root->right->left, 899);
     root->right->right->left = binary_tree_node(root->right->right, 92);
     root->right->right->right = binary_tree_node(root->right->right, 65);
     binary_tree_print(root);
 
     launch_test(root->left, root->right);
-    launch_test(root->right->left, root->right->right->right);
+    launch_test(root->left, root->right->left->right);
+    launch_test(root->right->left->right, root->right->right->right);
     launch_test(root->right->right, root->right->right->right);
     return (0);
 }
