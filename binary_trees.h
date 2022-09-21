@@ -46,5 +46,7 @@ int binary_tree_balance(const binary_tree_t *tree);
 int custom_height(const binary_tree_t *tree);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
+binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
+binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */
