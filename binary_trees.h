@@ -63,5 +63,7 @@ binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 
 bst_t *bst_insert(bst_t **tree, int value);
 avl_t *avl_insert(avl_t **tree, int value);
+bst_t *array_to_bst(int *array, size_t size);
+
 
 #endif /* _BINARY_TREES_H_ */
