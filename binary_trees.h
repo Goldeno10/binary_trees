@@ -19,6 +19,9 @@ typedef struct binary_tree_s
 	struct binary_tree_s *left;
 	struct binary_tree_s *right;
 } binary_tree_t;
+typedef struct binary_tree_s bst_t;
+typedef struct binary_tree_s avl_t;
+typedef struct binary_tree_s heap_t;
 
 void binary_tree_print(const binary_tree_t *);
 
@@ -52,5 +55,8 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 int binary_tree_is_complete(const binary_tree_t *tree);
 
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+
+bst_t *bst_insert(bst_t **tree, int value);
+bst_t *_insert(bst_t *node, int value);
 
 #endif /* _BINARY_TREES_H_ */
