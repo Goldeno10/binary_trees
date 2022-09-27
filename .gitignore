@@ -2,3 +2,6 @@
 *main.c
 #*
 exec_files
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
